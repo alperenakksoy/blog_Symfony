@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Exploring the Hidden Gems of Portugal - Wanderlust{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Discover breathtaking hidden destinations, cultural wonders, and local tips for your next Portugal trip.">
+    <meta name="keywords" content="Portugal, travel, hidden gems, Europe, Wanderlust">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://wanderlust.com/blog/portugal-hidden-gems">
+    <meta property="og:title" content="Exploring the Hidden Gems of Portugal">
+    <meta property="og:description" content="Discover breathtaking hidden destinations, cultural wonders, and local tips for your next Portugal trip.">
+    <meta property="og:image" content="/images/portugal-gems.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wanderlust.com/blog/portugal-hidden-gems">
+    <meta property="twitter:title" content="Exploring the Hidden Gems of Portugal">
+    <meta property="twitter:description" content="Discover breathtaking hidden destinations, cultural wonders, and local tips for your next Portugal trip.">
+    <meta property="twitter:image" content="/images/portugal-gems.jpg">
+{% endblock %}
+
+{% block body %}
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <header class="mb-8">
+            <div class="flex items-center mb-4">
+                <span class="bg-green-100 text-green-800 px-3 py-1 text-sm rounded-full">Europe</span>
+                <span class="text-gray-500 ml-4">July 1, 2025</span>
+                <span class="text-gray-500 ml-4">6 min read</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">Exploring the Hidden Gems of Portugal</h1>
+            <p class="text-xl text-gray-600 leading-relaxed">Discover breathtaking hidden destinations, cultural wonders, and local tips for your next Portugal trip.</p>
+        </header>
+
+        <div class="mb-8">
+            <img src="/images/portugal-gems.jpg" alt="Portugal Hidden Gems" class="w-full h-96 object-cover rounded-xl shadow-lg">
+            <p class="text-sm text-gray-500 mt-2 text-center italic">A quiet sunset over the cliffs of Algarve</p>
+        </div>
+
+        <div class="flex items-center mb-8 p-4 bg-gray-50 rounded-lg">
+            <img src="/images/author-jane.jpg" alt="Jane Doe" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <p class="font-semibold text-gray-900">Jane Doe</p>
+                <p class="text-sm text-gray-600">Travel writer and explorer. Sharing adventures from around the world.</p>
+            </div>
+        </div>
+
+        <div class="prose prose-lg max-w-none">
+            <p>Portugal is a country filled with rich history, stunning coastlines, and vibrant culture. Beyond the popular spots like Lisbon and Porto, there are numerous lesser-known destinations waiting to be explored...</p>
+            <h2>1. Monsaraz</h2>
+            <p>A medieval village with narrow cobbled streets and panoramic views of the Alentejo region.</p>
+            <h2>2. Piódão</h2>
+            <p>A charming schist village nestled in the mountains, known for its blue-doored stone houses.</p>
+            <h2>3. Berlengas Islands</h2>
+            <p>Accessible by boat from Peniche, these islands offer untouched nature and crystal-clear waters.</p>
+            <p>...and many more!</p>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Tags</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">#Portugal</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">#TravelTips</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">#HiddenGems</span>
+            </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Share this post</h3>
+            <div class="flex space-x-4">
+                <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Tweet</a>
+                <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Share</a>
+                <a href="#" class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800">LinkedIn</a>
+            </div>
+        </div>
+    </article>
+
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-gray-900 mb-8">Related Adventures</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/images/spain-travel.jpg" alt="Spain Travel" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 text-xs rounded-full">Europe</span>
+                        <h4 class="text-xl font-semibold text-gray-900 mt-2">Discovering Andalusia</h4>
+                        <p class="text-gray-600 mb-4">A colorful journey through southern Spain's most vibrant region.</p>
+                        <a href="#" class="text-primary hover:text-secondary font-medium">Read More →</a>
+                    </div>
+                </article>
+                <!-- Add 2 more similar hard-coded posts -->
+            </div>
+        </div>
+    </section>
+{% endblock %}

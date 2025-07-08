@@ -1,0 +1,122 @@
+{% extends '/base.html.twig' %}
+
+{% block title %}Travel Tips - Wanderlust{% endblock %}
+
+{% block body %}
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-primary">Wanderlust</h1>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="/destinations" class="text-gray-700 hover:text-primary transition-colors duration-200">Destinations</a>
+                    <a href="/travel-tips" class="text-primary font-semibold">Travel Tips</a>
+                    <a href="/about" class="text-gray-700 hover:text-primary transition-colors duration-200">About</a>
+                    <a href="/contact" class="text-gray-700 hover:text-primary transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="/login" class="px-4 py-2 rounded-lg font-medium text-indigo-600 hover:text-white hover:bg-indigo-600 border-2 border-indigo-600 transition-all duration-300 hover:shadow-md">
+                    Login
+                </a>
+                <a href="/register" class="px-4 py-2 rounded-lg font-medium text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                    Register
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-5xl font-bold mb-6">Expert Travel Tips</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Make your journeys smoother, safer, and more enjoyable with our comprehensive travel guides and insider tips from seasoned travelers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Categories -->
+<section class="bg-white py-8 border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap gap-4 justify-center">
+            <button class="px-6 py-2 rounded-full bg-primary text-white font-medium">All Tips</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Packing</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Budget Travel</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Safety</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Photography</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Solo Travel</button>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Tip -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="mb-12">
+        <h3 class="text-3xl font-bold text-gray-900 mb-2">Featured Travel Tip</h3>
+        <div class="w-20 h-1 bg-primary"></div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+        <div class="md:flex">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Travel packing" class="w-full h-64 md:h-64 object-cover">
+            </div>
+            <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                <h4 class="text-2xl font-semibold mb-4">Pack Light, Travel Far</h4>
+                <p class="text-gray-700 mb-6">Bringing only the essentials makes your travel experience more flexible and enjoyable. Consider rolling clothes, using packing cubes, and checking the weather beforehand to avoid overpacking.</p>
+                <a href="/tips/pack-light-travel-far" class="text-indigo-600 hover:underline font-medium">Read More →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Travel Tips Grid -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">Latest Tips</h3>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tip Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1554212777-603fce4c3d9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Budget Travel" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Save Money on Flights</h4>
+                        <p class="text-gray-600 mb-4">Use flight comparison tools, set price alerts, and consider off-peak travel dates for better prices.</p>
+                        <a href="/tips/save-money-on-flights" class="text-indigo-600 hover:underline font-medium">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Tip Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Safety Abroad" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Stay Safe Abroad</h4>
+                        <p class="text-gray-600 mb-4">Keep digital and physical copies of documents, be aware of scams, and always share your itinerary with someone back home.</p>
+                        <a href="/tips/stay-safe-abroad" class="text-indigo-600 hover:underline font-medium">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Tip Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Solo Travel" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Tips for Solo Travelers</h4>
+                        <p class="text-gray-600 mb-4">Build confidence by starting with short trips. Stay at hostels or join group tours to meet other travelers.</p>
+                        <a href="/tips/solo-travel-guide" class="text-indigo-600 hover:underline font-medium">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+

@@ -1,0 +1,296 @@
+{% extends '/base.html.twig' %}
+
+{% block title %}Destinations - Wanderlust{% endblock %}
+
+{% block body %}
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">Wanderlust</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="/" class="text-gray-700 hover:text-primary transition-colors duration-200">Home</a>
+                        <a href="/destinations" class="text-primary font-semibold">Destinations</a>
+                        <a href="/travel-tips" class="text-gray-700 hover:text-primary transition-colors duration-200">Travel Tips</a>
+                        <a href="/about" class="text-gray-700 hover:text-primary transition-colors duration-200">About</a>
+                        <a href="/contact" class="text-gray-700 hover:text-primary transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-4 items-center">
+                    <a href="/login" class="px-4 py-2 rounded-lg font-medium text-indigo-600 hover:text-white hover:bg-indigo-600 border-2 border-indigo-600 transition-all duration-300 hover:shadow-md">
+                        Login
+                    </a>
+                    <a href="/register" class="px-4 py-2 rounded-lg font-medium text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                        Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-5xl font-bold mb-6">Explore Amazing Destinations</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Discover breathtaking locations around the world, from hidden gems to iconic landmarks. Let our destination guides inspire your next adventure!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="px-6 py-2 rounded-full bg-primary text-white font-medium">All Destinations</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Europe</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Asia</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Americas</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Africa</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200">Oceania</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Destination 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Norway" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Europe</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Norway</h3>
+                        <p class="text-gray-600 mb-4">Experience the dramatic fjords, Northern Lights, and charming Nordic culture in this Scandinavian paradise.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">12 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Thailand" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Asia</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Thailand</h3>
+                        <p class="text-gray-600 mb-4">Discover ancient temples, pristine beaches, and vibrant street food culture in the Land of Smiles.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">18 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Peru" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">South America</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Peru</h3>
+                        <p class="text-gray-600 mb-4">Trek to Machu Picchu, explore ancient Incan ruins, and experience the rich culture of the Andes.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">8 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Italy" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Europe</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Italy</h3>
+                        <p class="text-gray-600 mb-4">Immerse yourself in Renaissance art, world-class cuisine, and stunning Mediterranean coastlines.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">25 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Morocco" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm">Africa</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Morocco</h3>
+                        <p class="text-gray-600 mb-4">Navigate bustling souks, explore Sahara dunes, and discover the magic of North African culture.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">14 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Japan" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Asia</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Japan</h3>
+                        <p class="text-gray-600 mb-4">Experience the perfect blend of ancient traditions and cutting-edge technology in this fascinating island nation.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">22 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 7 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="New Zealand" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Oceania</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">New Zealand</h3>
+                        <p class="text-gray-600 mb-4">Adventure awaits in this land of dramatic landscapes, from glaciers to fjords to rolling green hills.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">16 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 8 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Iceland" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Europe</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Iceland</h3>
+                        <p class="text-gray-600 mb-4">Witness geysers, glaciers, and Northern Lights in this Nordic island of fire and ice.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">10 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 9 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Patagonia" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">South America</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Patagonia</h3>
+                        <p class="text-gray-600 mb-4">Explore the untamed wilderness at the end of the world, with glaciers, peaks, and pristine nature.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">6 guides available</span>
+                            <a href="#" class="text-primary hover:text-secondary font-semibold">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
+                    Load More Destinations
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-gradient-to-r from-secondary to-primary text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold mb-4">Never Miss a Destination</h3>
+            <p class="text-xl mb-8">Get notified when we add new destination guides and travel inspiration.</p>
+            <div class="max-w-md mx-auto">
+                <div class="flex gap-3">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-accent">
+                    <button class="bg-accent hover:bg-yellow-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h4 class="text-2xl font-bold mb-4">Wanderlust</h4>
+                    <p class="text-gray-400 mb-4">Your gateway to incredible travel experiences and adventures around the world.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="/about" class="text-gray-400 hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="/destinations" class="text-gray-400 hover:text-white transition-colors duration-200">Destinations</a></li>
+                        <li><a href="/travel-tips" class="text-gray-400 hover:text-white transition-colors duration-200">Travel Tips</a></li>
+                        <li><a href="/contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Explore By Region</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Europe</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Asia</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">South America</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Africa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Wanderlust. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
